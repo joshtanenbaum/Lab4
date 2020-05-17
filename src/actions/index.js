@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 
-const ROOT_URL = 'https://platform.cs52.me/api'; // const ROOT_URL = 'http://localhost:9090/api';
-const API_KEY = '?key=j_tanenbaum';
+const ROOT_URL = 'http://localhost:9090/api';
+const API_KEY = ''; // '?key=j_tanenbaum';
 
 
 export function onInputChange(i, event) {
@@ -83,10 +83,3 @@ export function deletePost(id) {
       });
   };
 }
-
-/* export function fetchpost(id) axios get
-   export function deletePost(id, history) axios delete
-
-   curl -X DELETE -H "Content-Type: application/json" "https://platform.cs52.me/api/posts/5eb9322ce574e00038546d9d?key=j_tanenbaum"
-  curl -X DELETE -H "Content-Type: application/json" "https://platform.cs52.me/api/posts/5eb9322be574e00038546d9c?key=j_tanenbaum"
-*/

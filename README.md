@@ -1,5 +1,4 @@
-need to click note 2x (click, go back to hom, click again) to get it to display in /post/:postID
-need to refresh to see most changes
+need to click note 2x (click note, go back to home pg, click the same note again) to get it to display in /post/:postID need to refresh to see most changes
 
 Screencap1 (home pg)
 ![Alt text](screencap1.png?raw=true)

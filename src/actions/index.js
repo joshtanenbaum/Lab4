@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const ROOT_URL = 'https://themsfightinwords-lab5.herokuapp.com/api';
+const ROOT_URL = 'http://themsfightinwords-lab5.herokuapp.com/api';
 
 export function onInputChange(i, event) {
   return {

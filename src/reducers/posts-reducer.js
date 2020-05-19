@@ -1,7 +1,7 @@
 const StartState = {
   posts: [], /* { title: 'title1', tags: 'tags1', coverUrl: '![](https://media.giphy.com/media/pKEufUXBqsLi8/giphy.gif)' } */
   current: {
-    title: '', tags: '', content: '', coverUrl: '',
+    title: '', tags: '', content: '', coverUrl: '', username: '',
   },
   create_post_title: '',
   create_post_tags: '',

@@ -16,6 +16,7 @@ const Posts = (props) => {
         <Link to={l} exact="true" style={{ color: 'inherit', textDecoration: 'inherit' }}>
           <div>{post.title}</div>
           <div>{post.tags}</div>
+          <div>Author: {post.username}</div>
           <div className="noteBody" dangerouslySetInnerHTML={{ __html: marked(post.coverUrl || '') }} />
         </Link>
       </li>,

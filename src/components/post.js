@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import marked from 'marked';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faSave } from '@fortawesome/free-solid-svg-icons';
@@ -117,17 +117,16 @@ class Post extends React.Component {
         {this.tagsEditBox()}
         {this.contentEditBox()}
         {this.coverUrlBox()}
+        <div>Author: {this.props.current.username}</div>
         <div>
-          <Link to="/" exact="true">
-            <FontAwesomeIcon icon={faSave}
-              onClick={() => {
-                this.props.submitUpdatePost(this.props.match.params.postID, {
-                  title: this.state.title, tags: this.state.tags, content: this.state.content, coverUrl: this.state.coverUrl,
-                });
-              }}
-            />
-            <FontAwesomeIcon icon={faTrash} onClick={() => { this.props.deletePost(this.props.match.params.postID); }} />
-          </Link>
+          <FontAwesomeIcon icon={faSave}
+            onClick={() => {
+              this.props.submitUpdatePost(this.props.match.params.postID, {
+                title: this.state.title, tags: this.state.tags, content: this.state.content, coverUrl: this.state.coverUrl,
+              });
+            }}
+          />
+          <FontAwesomeIcon icon={faTrash} onClick={() => { this.props.deletePost(this.props.match.params.postID, this.props.history); }} />
         </div>
       </div>
     );

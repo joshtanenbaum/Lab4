@@ -48,7 +48,7 @@
     "axios": "^0.19.2",
     "jquery": "^3.5.0",
     "lodash.debounce": "^4.0.8",
-    "marked": "^1.0.0",
+    "marked": "^4.0.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-draggable": "^4.3.1",
